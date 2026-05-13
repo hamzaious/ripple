@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://assets-v2.lottiefiles.com/a/32e56502-1152-11ee-bf05-c711ad72b421/5WkZg7nfC1.gif" alt="RippleEffect" width="320" />
+<img src="docs/ripple-banner.gif" alt="RippleEffect" width="120" />
 
 # RippleEffect
 
