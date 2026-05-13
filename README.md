@@ -290,28 +290,6 @@ ripple.matchViewCornerRadius = RippleBackgroundView.MATCH_VIEW_CORNER_RADIUS_AUT
 </com.github.ripple.effect.RippleBackgroundView>
 ```
 
-### How shape detection works
-
-`MATCH_VIEW` walks two probes, in order:
-
-1. **`GradientDrawable` background** — catches `oval`, plain `rectangle`,
-   and `rectangle` with `cornerRadius`.
-2. **`ViewOutlineProvider`** — handles Material buttons, `CardView`, FABs,
-   round-rect outlines and inscribed-circle outlines.
-3. Falls back to **plain rect** for views with arbitrary path outlines.
-
-Aspect ratio is preserved: a 100 × 40 button produces a unit path of
-`(-1, -0.4, 1, 0.4)`, scaled uniformly per ripple. At `rippleScale = 1`
-the first ripple sits exactly on the view's edges; at `rippleScale = 6`
-it expands to 6× that size.
-
-> **Tip:** to ripple along the alpha channel of a transparent PNG, install
-> a custom `ViewOutlineProvider` on the `ImageView` that calls
-> `outline.setPath(yourTracedPath)`. `MATCH_VIEW` will pick it up
-> automatically.
-
----
-
 ## XML attributes
 
 | Attribute              | Type      | Default               | Description |
@@ -365,26 +343,6 @@ so you can mutate it at runtime.
 | `start()`             | `Unit`           | idempotent |
 | `stop()`              | `Unit`           | clears the canvas |
 
-### Companion / static
-
-```kotlin
-companion object {
-    const val MATCH_VIEW_CORNER_RADIUS_AUTO: Float = -1f
-
-    @JvmStatic
-    fun attach(target: View): RippleBackgroundView
-}
-```
-
-### Kotlin extension
-
-```kotlin
-fun View.addRippleEffect(
-    configure: RippleBackgroundView.() -> Unit = {}
-): RippleBackgroundView
-```
-
----
 
 ## Performance notes
 
