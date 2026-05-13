@@ -11,10 +11,10 @@ built-in shape (circle, star, arrow, diamond, moon) — or in the **exact shape
 of the view you point them at**.
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![JitPack](https://jitpack.io/v/ripple-effect/RippleEffect.svg)](https://jitpack.io/#ripple-effect/RippleEffect)
+[![JitPack](https://jitpack.io/v/hamzaious/ripple.svg)](https://jitpack.io/#hamzaious/ripple)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg)](https://android-arsenal.com/api?level=21)
 [![AAR](https://img.shields.io/badge/AAR-~19%20KB-informational.svg)](#performance)
-[![Build](https://github.com/ripple-effect/RippleEffect/actions/workflows/build.yml/badge.svg)](https://github.com/ripple-effect/RippleEffect/actions/workflows/build.yml)
+[![Build](https://github.com/hamzaious/ripple/actions/workflows/build.yml/badge.svg)](https://github.com/hamzaious/ripple/actions/workflows/build.yml)
 
 </div>
 
@@ -52,10 +52,9 @@ dependencies {
 }
 ```
 
-> If you fork this project, the JitPack coordinate becomes
-> `com.github.<your-github-username>:RippleEffect:<tag>`. To use the literal
-> `com.github.ripple.effect:ripple` group you'll need Maven Central or a
-> self-hosted Maven repo.
+Replace `1.0.0` with any [tagged release](https://github.com/hamzaious/ripple/releases)
+or a short commit SHA — JitPack builds on demand from `jitpack.yml` and respects
+the custom `groupId`/`artifactId` declared in `ripple/build.gradle.kts`.
 
 Prefer vendoring? `include(":ripple")` then `implementation(project(":ripple"))`.
 

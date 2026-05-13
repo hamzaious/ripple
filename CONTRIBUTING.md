@@ -25,8 +25,8 @@ Requirements:
 - Gradle 9.3.1 (the wrapper script will fetch it on first run)
 
 ```bash
-git clone https://github.com/ripple-effect/RippleEffect.git
-cd RippleEffect
+git clone https://github.com/hamzaious/ripple.git
+cd ripple
 ./gradlew :app:assembleDebug      # build the demo
 ./gradlew :ripple:assembleRelease # build the library AAR
 ```

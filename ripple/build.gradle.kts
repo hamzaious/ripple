@@ -50,8 +50,8 @@ dependencies {
 val libGroup = "com.github.ripple.effect"
 val libArtifact = "ripple"
 val libVersion = "1.0.0"
-val libGitOrg = "ripple-effect"          // GitHub organization / user that hosts the repo
-val libRepoName = "RippleEffect"
+val libGitOrg = "hamzaious"              // GitHub user that hosts the repo
+val libRepoName = "ripple"
 val libUrl = "https://github.com/$libGitOrg/$libRepoName"
 
 afterEvaluate {
@@ -83,7 +83,7 @@ afterEvaluate {
                     developers {
                         developer {
                             id.set(libGitOrg)
-                            name.set("RippleEffect contributors")
+                            name.set("RippleEffect")
                             url.set("https://github.com/$libGitOrg")
                         }
                     }

@@ -43,5 +43,5 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Zero runtime dependencies (no AndroidX, no Material, no Kotlin reflection).
 - Release AAR ~19 KB.
 
-[Unreleased]: https://github.com/ripple-effect/RippleEffect/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/ripple-effect/RippleEffect/releases/tag/v1.0.0
+[Unreleased]: https://github.com/hamzaious/ripple/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/hamzaious/ripple/releases/tag/v1.0.0
