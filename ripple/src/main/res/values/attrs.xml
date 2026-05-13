@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RippleBackgroundView">
+        <!-- Color of the ripple. Default: holo_blue_dark. -->
+        <attr name="rb_color" format="color" />
+        <!-- Base radius of the ripple. Default: 64dp. -->
+        <attr name="rb_radius" format="dimension" />
+        <!-- Number of ripples on screen at once. Default: 4. -->
+        <attr name="rb_rippleAmount" format="integer" />
+        <!-- Duration of one ripple cycle (ms). Default: 3000. -->
+        <attr name="rb_duration" format="integer" />
+        <!-- Final scale factor of a ripple. Default: 6. -->
+        <attr name="rb_scale" format="float" />
+        <!-- Fill or stroke a ripple. -->
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0" />
+            <enum name="strokeRipple" value="1" />
+        </attr>
+        <!-- Stroke width, used only when rb_type=strokeRipple. Default: 2dp. -->
+        <attr name="rb_strokeWidth" format="dimension" />
+        <!-- Shape of each ripple. Use `matchView` to derive the ripple shape
+             from the first child's outline / background drawable, so the
+             ripple automatically matches a wrapped Button / ImageView / Card. -->
+        <attr name="rb_shape" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="star" value="1" />
+            <enum name="arrow" value="2" />
+            <enum name="diamond" value="3" />
+            <enum name="moon" value="4" />
+            <enum name="matchView" value="5" />
+        </attr>
+        <!-- Override for the ripple's corner radius when rb_shape="matchView".
+             Negative / unset means "auto" (use the source view's natural shape).
+             Zero forces sharp rectangles. A value >= half the view's shorter
+             side produces ovals / circles. -->
+        <attr name="rb_matchViewCornerRadius" format="dimension" />
+        <!-- Number of points for the star shape (>= 3). Default: 5. -->
+        <attr name="rb_starPoints" format="integer" />
+        <!-- Inner radius ratio for the star (0..1). Default: 0.45. -->
+        <attr name="rb_starInnerRatio" format="float" />
+        <!-- Rotation of each ripple, in degrees. Default: 0. -->
+        <attr name="rb_shapeRotation" format="float" />
+        <!-- Start alpha (0..1). Default: 1. -->
+        <attr name="rb_startAlpha" format="float" />
+        <!-- End alpha (0..1). Default: 0. -->
+        <attr name="rb_endAlpha" format="float" />
+        <!-- Spawn ripples automatically as soon as the view is attached. Default: false. -->
+        <attr name="rb_autoStart" format="boolean" />
+        <!-- Interpolator used for ripple progress. -->
+        <attr name="rb_interpolator" format="reference" />
+    </declare-styleable>
+
+</resources>

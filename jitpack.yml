@@ -1,0 +1,9 @@
+# Build instructions for jitpack.io.
+# Whenever you push a Git tag (e.g. v1.0.0) to GitHub, JitPack will run this
+# config and serve `com.github.<user>:RippleEffect:<tag>` as a Maven artifact.
+
+jdk:
+  - openjdk17
+
+install:
+  - ./gradlew :ripple:publishToMavenLocal -x test -x lint --no-daemon

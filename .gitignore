@@ -1,0 +1,68 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+
+# Java / Kotlin build outputs
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Generated files
+bin/
+gen/
+out/
+release/
+/build
+*/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.properties
+
+# Kotlin build cache (AGP 9 / Kotlin 2.x)
+.kotlin/
+
+# IDE files — Android Studio / IntelliJ
+*.iml
+.idea/
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/runConfigurations.xml
+
+# IDE files — VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local configuration (contains absolute SDK path — must not be committed)
+local.properties
+
+# Keystores and signing configs (sensitive)
+*.jks
+*.keystore
+signing.properties
+
+# Logs / temp
+*.log
+*.swp
+*.tmp
+hs_err_pid*
+
+# Coverage
+/coverage/
+
+# Crashlytics / analytics
+crashlytics-build.properties
+crashlytics.properties

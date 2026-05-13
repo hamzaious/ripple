@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">RippleEffect</string>
+    <string name="center_label">RippleEffect</string>
+
+    <string name="label_shape">Shape</string>
+    <string name="label_type">Style</string>
+
+    <string name="shape_circle">Circle</string>
+    <string name="shape_star">Star</string>
+    <string name="shape_arrow">Arrow</string>
+    <string name="shape_diamond">Diamond</string>
+    <string name="shape_moon">Moon</string>
+    <string name="shape_match">Match view</string>
+
+    <string name="demo_button">Tap me</string>
+
+    <string name="type_fill">Fill</string>
+    <string name="type_stroke">Stroke</string>
+
+    <string name="speed_value">Duration: %1$d ms</string>
+    <string name="amount_value">Ripples: %1$d</string>
+    <string name="scale_value">Scale: %1$d×</string>
+    <string name="corner_value">Match-view corner: %1$d dp</string>
+    <string name="corner_auto">Match-view corner: Auto</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+</resources>

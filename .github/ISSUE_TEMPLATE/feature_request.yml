@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest a new capability for RippleEffect
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do that you can't do today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the API look like? Include an XML attribute or Kotlin property sketch if possible.
+      render: kotlin
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Library constraints
+      description: Please confirm your proposal respects the library's invariants.
+      options:
+        - label: It does not add any runtime dependency to `:ripple`.
+          required: true
+        - label: It does not raise `minSdk` above 21.
+          required: true
+        - label: It does not allocate inside `onDraw`.
+          required: true

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand ripple color (dark theme: brighter cyan for contrast on dark surface). -->
+    <color name="demo_ripple">#FF4FC3F7</color>
+</resources>
